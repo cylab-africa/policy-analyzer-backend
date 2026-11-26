@@ -1,0 +1,29 @@
+__pycache__ 
+*.db
+*.env
+.env.atlas.bak
+venv
+*qdrant_data/
+*qdrant_storage/
+*documents/
+data_docs/
+temp
+*.log
+redis_data/
+DEPLOYMENT.md
+*.zip 
+CODATA_PAPER_MATERIAL.md
+# Chat history database written by the container
+db_data/
+
+# Reference data exported from a database for merging (scripts/seed_reference_data.py --export)
+exported/
+
+# Editor and OS files
+.vscode/
+.DS_Store
+
+# Database dumps
+mongo_dump/
+mongo_dump.archive
+mongo_backup.archive

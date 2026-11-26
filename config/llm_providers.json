@@ -1,0 +1,228 @@
+{
+  "version": "1.0.0",
+  "description": "LLM provider configurations with LangChain abstraction support",
+  "default_provider": "openai",
+  "default_embedding_provider": "openai",
+  "providers": {
+    "openai": {
+      "enabled": true,
+      "class": "ChatOpenAI",
+      "module": "langchain_openai",
+      "description": "OpenAI GPT models",
+      "api_key_env": "OPENAI_API_KEY",
+      "models": {
+        "gpt-5": {
+          "max_tokens": 8192,
+          "supports_streaming": true,
+          "cost_per_1k_tokens": 0.06,
+          "description": "Next-generation GPT model"
+        },
+        "gpt-4o": {
+          "max_tokens": 4096,
+          "supports_streaming": true,
+          "cost_per_1k_tokens": 0.03,
+          "description": "Most capable GPT-4 model"
+        },
+        "us.anthropic.claude-sonnet-5": {
+          "max_tokens": 16384,
+          "supports_streaming": true,
+          "cost_per_1k_tokens": 0.015,
+          "description": "Faster, more affordable GPT-4"
+        },
+        "gpt-3.5-turbo": {
+          "max_tokens": 4096,
+          "supports_streaming": true,
+          "cost_per_1k_tokens": 0.002,
+          "description": "Fast and economical"
+        }
+      },
+      "embedding_models": {
+        "text-embedding-3-small": {
+          "dimensions": 1536,
+          "cost_per_1k_tokens": 0.0001,
+          "description": "Smaller, faster embeddings"
+        },
+        "text-embedding-3-large": {
+          "dimensions": 3072,
+          "cost_per_1k_tokens": 0.0004,
+          "description": "Larger, more accurate embeddings"
+        }
+      },
+      "default_model": "us.anthropic.claude-sonnet-5",
+      "default_embedding_model": "azure/text-embedding-3-small"
+    },
+    "anthropic": {
+      "enabled": false,
+      "class": "ChatAnthropic",
+      "module": "langchain_anthropic",
+      "description": "Anthropic Claude models",
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "models": {
+        "claude-3-5-sonnet-20241022": {
+          "max_tokens": 8192,
+          "supports_streaming": true,
+          "cost_per_1k_tokens": 0.015,
+          "description": "Most capable Claude model"
+        },
+        "claude-3-opus-20240229": {
+          "max_tokens": 4096,
+          "supports_streaming": true,
+          "cost_per_1k_tokens": 0.075,
+          "description": "Powerful reasoning"
+        },
+        "claude-3-haiku-20240307": {
+          "max_tokens": 4096,
+          "supports_streaming": true,
+          "cost_per_1k_tokens": 0.0008,
+          "description": "Fast and economical"
+        }
+      },
+      "default_model": "claude-3-5-sonnet-20241022"
+    },
+    "azure": {
+      "enabled": false,
+      "class": "AzureChatOpenAI",
+      "module": "langchain_openai",
+      "description": "Azure OpenAI Service",
+      "api_key_env": "AZURE_OPENAI_API_KEY",
+      "additional_params": {
+        "azure_endpoint": "AZURE_OPENAI_ENDPOINT",
+        "api_version": "2024-02-15-preview"
+      },
+      "models": {
+        "gpt-4": {
+          "deployment_name": "gpt-4",
+          "max_tokens": 8192,
+          "supports_streaming": true
+        }
+      },
+      "default_model": "gpt-4"
+    },
+    "google": {
+      "enabled": false,
+      "class": "ChatGoogleGenerativeAI",
+      "module": "langchain_google_genai",
+      "description": "Google Gemini models",
+      "api_key_env": "GOOGLE_API_KEY",
+      "models": {
+        "gemini-pro": {
+          "max_tokens": 8192,
+          "supports_streaming": true,
+          "description": "Google's most capable model"
+        },
+        "gemini-pro-vision": {
+          "max_tokens": 4096,
+          "supports_streaming": false,
+          "description": "Multimodal model"
+        }
+      },
+      "default_model": "gemini-pro"
+    },
+    "ollama": {
+      "enabled": false,
+      "class": "ChatOllama",
+      "module": "langchain_community.chat_models",
+      "description": "Self-hosted open-source models",
+      "base_url": "http://localhost:11434",
+      "models": {
+        "llama2": {
+          "max_tokens": 4096,
+          "supports_streaming": true,
+          "description": "Meta's Llama 2"
+        },
+        "mistral": {
+          "max_tokens": 8192,
+          "supports_streaming": true,
+          "description": "Mistral 7B"
+        }
+      },
+      "default_model": "llama2"
+    },
+    "huggingface": {
+      "enabled": false,
+      "class": "HuggingFaceHub",
+      "module": "langchain_community.llms",
+      "description": "HuggingFace hosted models",
+      "api_key_env": "HUGGINGFACEHUB_API_TOKEN",
+      "models": {
+        "mistralai/Mistral-7B-Instruct-v0.2": {
+          "max_tokens": 4096,
+          "supports_streaming": false
+        }
+      },
+      "default_model": "mistralai/Mistral-7B-Instruct-v0.2"
+    }
+  },
+  "use_cases": {
+    "document_processing": {
+      "description": "Extract metadata from uploaded documents",
+      "provider": "openai",
+      "model": "us.anthropic.claude-sonnet-5",
+      "temperature": 0.0,
+      "max_tokens": 500,
+      "streaming": false,
+      "fallback_provider": "openai",
+      "fallback_model": "us.anthropic.claude-sonnet-5"
+    },
+    "query_response": {
+      "description": "Main query answering with streaming",
+      "provider": "openai",
+      "model": "us.anthropic.claude-sonnet-5",
+      "temperature": 0.2,
+      "max_tokens": 2048,
+      "streaming": true,
+      "fallback_provider": "openai",
+      "fallback_model": "us.anthropic.claude-sonnet-5"
+    },
+    "tab_detection": {
+      "description": "Detect appropriate tab from query",
+      "provider": "openai",
+      "model": "us.anthropic.claude-sonnet-5",
+      "temperature": 0.0,
+      "max_tokens": 30,
+      "streaming": false
+    },
+    "metadata_filtering": {
+      "description": "Extract entities for filtering",
+      "provider": "openai",
+      "model": "us.anthropic.claude-sonnet-5",
+      "temperature": 0.0,
+      "max_tokens": 200,
+      "streaming": false
+    },
+    "query_rewriting": {
+      "description": "Optimize queries for retrieval",
+      "provider": "openai",
+      "model": "us.anthropic.claude-sonnet-5",
+      "temperature": 0.3,
+      "max_tokens": 100,
+      "streaming": false
+    },
+    "document_grading": {
+      "description": "Grade document relevance",
+      "provider": "openai",
+      "model": "us.anthropic.claude-sonnet-5",
+      "temperature": 0.0,
+      "max_tokens": 10,
+      "streaming": false
+    },
+    "embeddings": {
+      "description": "Generate embeddings for vector store",
+      "provider": "openai",
+      "model": "azure/text-embedding-3-small"
+    }
+  },
+  "fallback_strategy": {
+    "enabled": true,
+    "max_retries": 3,
+    "retry_delay_seconds": 2,
+    "use_fallback_on_error": true,
+    "description": "Automatic fallback to alternative models on failure"
+  },
+  "rate_limiting": {
+    "enabled": false,
+    "requests_per_minute": 60,
+    "tokens_per_minute": 90000,
+    "description": "Rate limiting to prevent API quota exhaustion"
+  }
+}

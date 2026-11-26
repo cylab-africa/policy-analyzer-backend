@@ -1,0 +1,937 @@
+[
+    {
+        "country": "Nigeria",
+        "status": "Partial",
+        "isoAlpha2": "NG",
+        "flagEmoji": "🇳🇬",
+        "authority": "National Identity Management Commission (NIMC)",
+        "description": "Nigeria's NIN is widely used for essential services. The World Bank–funded ID project has been extended to 2026. About 104M NINs were issued by early 2024.",
+        "features": [
+            "Mandatory for SIM cards",
+            "Linked to banking services",
+            "World Bank funding",
+            "Extended program timeline"
+        ],
+        "year_launched": "2007 (expanded in 2014)",
+        "coverage": "50%",
+        "links": [
+            {
+                "title": "ECDPM Digital ID Systems in Africa Research Paper (2023)",
+                "url": "https://ecdpm.org/application/files/5517/0254/4789/Digital-ID-systems-in-Africa-ECDPM-Discussion-Paper-360-2023.pdf",
+                "type": "Academic Research"
+            },
+            {
+                "title": "Research ICT Africa Digital ID Framework Analysis",
+                "url": "https://researchictafrica.net/2021/06/21/why-digital-id-matters/",
+                "type": "Research Institute"
+            }
+        ]
+    },
+    {
+        "country": "Kenya",
+        "isoAlpha2": "KE",
+        "flagEmoji": "🇰🇪",
+        "status": "Partial",
+        "authority": "State Department for Immigration and Citizen Services",
+        "description": "Maisha Namba is Kenya's new digital ID. Rollout resumed after the High Court lifted the suspension in August 2024. Earlier Huduma Namba project was ruled unconstitutional in 2021.",
+        "features": [
+            "Unique lifelong ID (Maisha Namba)",
+            "Digital government services access",
+            "Legal safeguards after Huduma Namba ruling"
+        ],
+        "year_launched": "2023",
+        "coverage": "Early rollout phase",
+        "links": [
+            {
+                "title": "ECDPM Digital ID Systems in Africa Research Paper (2023)",
+                "url": "https://ecdpm.org/application/files/5517/0254/4789/Digital-ID-systems-in-Africa-ECDPM-Discussion-Paper-360-2023.pdf",
+                "type": "Academic Research"
+            },
+            {
+                "title": "Digital Identification and Biometrics in East Africa - SAIIA Policy Briefing",
+                "url": "https://saiia.org.za/research/digital-identification-and-biometrics-in-east-africa-opportunities-and-concerns/",
+                "type": "Policy Research"
+            }
+        ]
+    },
+    {
+        "country": "Ethiopia",
+        "isoAlpha2": "ET",
+        "flagEmoji": "🇪🇹",
+        "status": "Implemented",
+        "authority": "National ID Program Office",
+        "description": "Ethiopia's Fayda ID, based on MOSIP, is scaling nationally. Over 20M enrolled by mid-2025, including pilots with refugees.",
+        "features": ["MOSIP-based system", "Digital services integration", "Refugee inclusion"],
+        "year_launched": "2021",
+        "coverage": "25%",
+        "links": [
+            {
+                "title": "World Bank Ethiopia Digital ID Project Analysis",
+                "url": "https://www.worldbank.org/en/news/feature/2025/02/27/the-transformative-power-of-ethiopia-afe-digital-id-unlocking-a-better-future-for-all",
+                "type": "Development Partner"
+            },
+            {
+                "title": "Digital Identification and ICT-Driven Development in Africa - Columbia Academic Commons",
+                "url": "https://academiccommons.columbia.edu/doi/10.7916/d8-c4vx-mb46",
+                "type": "Academic Research"
+            }
+        ]
+    },
+    {
+        "country": "South Africa",
+        "status": "Partial",
+        "isoAlpha2": "ZA",
+        "flagEmoji": "🇿🇦",
+        "authority": "Department of Home Affairs",
+        "description": "Comprehensive digital ID system planned for implementation by 2029, potentially for use in 2029 elections. Current smart cards have limited digital integration.",
+        "features": ["Smart cards", "Digital transformation planned", "Election integration planned"],
+        "year_launched": "TBD",
+        "coverage": "85%",
+        "links": [
+            {
+                "title": "ECDPM Digital ID Systems in Africa Research Paper (2023)",
+                "url": "https://ecdpm.org/application/files/5517/0254/4789/Digital-ID-systems-in-Africa-ECDPM-Discussion-Paper-360-2023.pdf",
+                "type": "Academic Research"
+            },
+            {
+                "title": "Research ICT Africa Digital Identity Analysis",
+                "url": "https://blogs.lse.ac.uk/medialse/2021/11/22/assessing-socio-digital-identity-ecosystems-in-africa/",
+                "type": "Academic Research"
+            }
+        ]
+    },
+    {
+        "country": "Ghana",
+        "isoAlpha2": "GH",
+        "flagEmoji": "🇬🇭",
+        "status": "Implemented",
+        "authority": "National Identification Authority",
+        "description": "Ghana Card system operational with ongoing expansions. 190K new digital IDs issued in first half of 2024. Multipurpose card development planned.",
+        "features": ["Biometric data", "Centralized database", "Birth registration integration", "Multipurpose features planned"],
+        "year_launched": "2017",
+        "coverage": "60%",
+        "links": [
+            {
+                "title": "Digital Identity in Ghana - CIS Research Study",
+                "url": "https://digitalid.design/RIA_Ghana.html",
+                "type": "Academic Research"
+            },
+            {
+                "title": "Major research project examines digital identity in 10 African countries (Biometric Update, 2021)",
+                "url": "https://www.biometricupdate.com/202111/major-research-project-examines-digital-identity-in-10-african-countries",
+                "type": "News"
+            }
+        ]
+    },
+    {
+        "country": "Rwanda",
+        "status": "Partial",
+        "isoAlpha2": "RW",
+        "flagEmoji": "🇷🇼",
+        "authority": "National ID Agency (NIDA)",
+        "description": "Rwanda is in the partial launch phase of a new, comprehensive digital ID system, with a pre-enrollment drive initiated in August 2025. This project will replace the older national ID system with a more secure and versatile digital identity platform. Biometric data collection is set to begin in September 2025, with the first digital IDs expected to be issued in June 2026. The new system, supported by the World Bank, is designed to be inclusive and will feature a physical card, a digital version, and a unique authentication number. The existing Irembo platform continues to provide online government services.",
+        "features": ["Compulsory ID from age 16", "Digital ID modernization", "Civil registration digitization", "World Bank support"],
+        "year_launched": "2008",
+        "coverage": "High (majority of eligible citizens enrolled)",
+        "links": [
+            {
+                "title": "World Bank ID4D Country Diagnostic: Rwanda",
+                "url": "https://documents1.worldbank.org/curated/en/257581546882856591/pdf/128624-REVISED-PUBLIC-Rwanda-ID4D-Diagnostic-01042019.pdf",
+                "type": "Development Partner"
+            }
+        ]
+    },
+    {
+        "country": "Uganda",
+        "isoAlpha2": "UG",
+        "flagEmoji": "🇺🇬",
+        "status": "Partial",
+        "authority": "National Identification and Registration Authority (NIRA)",
+        "description": "Uganda is shifting to new chip-based national IDs. Procurement and legal disputes have delayed re-enrolment to 2025, creating a major backlog.",
+        "features": ["Current ID in use", "Planned chip-based upgrade", "Large-scale re-enrolment"],
+        "year_launched": "2014",
+        "coverage": "Majority enrolled under existing system, backlog for renewal",
+        "links": [
+            {
+                "title": "Digital Identification and Biometrics in East Africa - SAIIA Policy Briefing",
+                "url": "https://saiia.org.za/research/digital-identification-and-biometrics-in-east-africa-opportunities-and-concerns/",
+                "type": "Policy Research"
+            }
+        ]
+    },
+    {
+        "country": "Morocco",
+        "isoAlpha2": "MA",
+        "flagEmoji": "🇲🇦",
+        "status": "Implemented",
+        "authority": "Directorate General of National Security (DGSN)",
+        "description": "National digital ID system using MOSIP platform showing steady progress. Strong rural deployment with mobile units.",
+        "features": ["MOSIP platform", "Mobile enrollment units", "Digital government services", "Rural deployment"],
+        "year_launched": "2020",
+        "coverage": "60%",
+        "links": [
+            {
+                "title": "World Bank ID4D Country Diagnostic: Morocco",
+                "url": "https://id4d.worldbank.org/sites/default/files/2018-04/Morocco_ID4D_Diagnostic_Web404018.pdf",
+                "type": "Development Partner"
+            }
+        ]
+    },
+    {
+        "country": "Egypt",
+        "isoAlpha2": "EG",
+        "flagEmoji": "🇪🇬",
+        "status": "Planning",
+        "authority": "Ministry of Interior",
+        "description": "Digital Egypt initiative includes electronic driver's licenses. National digital ID system in development phase.",
+        "features": ["Electronic licenses", "Digital government services", "ICT infrastructure development"],
+        "year_launched": "2024",
+        "coverage": "30%",
+        "links": [
+            {
+                "title": "Digital identification in Africa - Diplo Resource Policy Analysis",
+                "url": "https://www.diplomacy.edu/resource/report-stronger-digital-voices-from-africa/digital-identification-africa/",
+                "type": "Policy Research"
+            }
+        ]
+    },
+    {
+        "country": "Tunisia",
+        "isoAlpha2": "TN",
+        "flagEmoji": "🇹🇳",
+        "status": "Partial",
+        "authority": "Ministry of Communication Technologies",
+        "description": "E-Houwiya digital identity system launched 2022. Limited adoption with biometric cards planned for 2025.",
+        "features": ["E-Houwiya platform", "Mobile-ID", "Biometric cards planned"],
+        "year_launched": "2022",
+        "coverage": "15%",
+        "links": [
+            {
+                "title": "Digital identification in Africa - Diplo Resource Policy Analysis",
+                "url": "https://www.diplomacy.edu/resource/report-stronger-digital-voices-from-africa/digital-identification-africa/",
+                "type": "Policy Research"
+            }
+        ]
+    },
+    {
+        "country": "Algeria",
+        "isoAlpha2": "DZ",
+        "flagEmoji": "🇩🇿",
+        "status": "Implemented",
+        "authority": "Ministry of Interior",
+        "description": "Biometric national identity card (CNIBE) with microchip technology operational since 2016.",
+        "features": ["Microchip technology", "Biometric authentication", "Secure database integration"],
+        "year_launched": "2016",
+        "coverage": "80%",
+        "links": [
+            {
+                "title": "Digital identification in Africa - Diplo Resource Policy Analysis",
+                "url": "https://www.diplomacy.edu/resource/report-stronger-digital-voices-from-africa/digital-identification-africa/",
+                "type": "Policy Research"
+            }
+        ]
+    },
+    {
+        "country": "Libya",
+        "isoAlpha2": "LY",
+        "flagEmoji": "🇱🇾",
+        "status": "No Data",
+        "authority": "Government of National Accord",
+        "description": "Partnership with Idemia for biometric digital identity system stalled due to political instability and conflict.",
+        "features": ["Biometric system planned"],
+        "year_launched": "N/A",
+        "coverage": "Unknown",
+        "links": []
+    },
+    {
+        "country": "Senegal",
+        "isoAlpha2": "SN",
+        "flagEmoji": "🇸🇳",
+        "status": "Implemented",
+        "authority": "Ministry of Interior",
+        "description": "First country to fully implement ECOWAS National Biometric Identity Card (ENBIC) with regional mobility features.",
+        "features": ["ECOWAS ENBIC", "Regional mobility", "Biometric technology"],
+        "year_launched": "2015",
+        "coverage": "70%",
+        "links": [
+            {
+                "title": "Digital identification in Africa - Diplo Resource Policy Analysis",
+                "url": "https://www.diplomacy.edu/resource/report-stronger-digital-voices-from-africa/digital-identification-africa/",
+                "type": "Policy Research"
+            }
+        ]
+    },
+    {
+        "country": "Côte d'Ivoire",
+        "isoAlpha2": "CI",
+        "flagEmoji": "🇨🇮",
+        "status": "Partial",
+        "authority": "National Office of Civil Status",
+        "description": "Digital ID initiatives as part of civil registration modernization with limited progress.",
+        "features": ["Civil registration integration", "Biometric components"],
+        "year_launched": "2020",
+        "coverage": "40%",
+        "links": [
+            {
+                "title": "World Bank ID4D Country Diagnostic: Cote d'Ivoire",
+                "url": "https://id4d.worldbank.org/sites/default/files/2018-04/Cote%20d'Ivoire_ID4D_Diagnostic_Web040618.pdf",
+                "type": "Development Partner"
+            }
+        ]
+    },
+    {
+        "country": "Benin",
+        "isoAlpha2": "BJ",
+        "flagEmoji": "🇧🇯",
+        "status": "Partial",
+        "authority": "Ministry of Interior",
+        "description": "RAVIP campaign for improved digital ID access. Part of WURI program with limited progress.",
+        "features": ["Biometric cards", "WURI program integration"],
+        "year_launched": "2019",
+        "coverage": "25%",
+        "links": [
+            {
+                "title": "ECDPM Digital ID Systems in Africa Research Paper (2023)",
+                "url": "https://ecdpm.org/application/files/5517/0254/4789/Digital-ID-systems-in-Africa-ECDPM-Discussion-Paper-360-2023.pdf",
+                "type": "Academic Research"
+            }
+        ]
+    },
+    {
+        "country": "Burkina Faso",
+        "isoAlpha2": "BF",
+        "flagEmoji": "🇧🇫",
+        "status": "Planning",
+        "authority": "National Identity Office",
+        "description": "Part of WURI program for digital identity and social services integration with minimal progress.",
+        "features": ["WURI program", "Social services integration"],
+        "year_launched": "TBD",
+        "coverage": "10%",
+        "links": [
+            {
+                "title": "World Bank ID4D Country Diagnostic: Burkina Faso",
+                "url": "https://documents1.worldbank.org/curated/en/653431522763079651/ID4D-Country-Diagnostic-Burkina-Faso.pdf",
+                "type": "Development Partner"
+            }
+        ]
+    },
+    {
+        "country": "Mali",
+        "isoAlpha2": "ML",
+        "flagEmoji": "🇲🇱",
+        "status": "Partial",
+        "authority": "Ministry of Territorial Administration",
+        "description": "Mali's NINA number comes from the RAVEC biometric census begun in 2009. Handover of the secure biometric national ID card began in April 2023, starting in Bamako, after a NINA data update earlier that year.",
+        "features": ["NINA number", "Biometric national ID card"],
+        "year_launched": "2009 (NINA census); biometric card 2023",
+        "coverage": "Unknown",
+        "links": [
+            {
+                "title": "Mali: lancement de la remise de la carte nationale biométrique (allAfrica, 2023)",
+                "url": "https://fr.allafrica.com/stories/202304110515.html",
+                "type": "News"
+            }
+        ]
+    },
+    {
+        "country": "Niger",
+        "isoAlpha2": "NE",
+        "flagEmoji": "🇳🇪",
+        "status": "No Data",
+        "authority": "Civil Registry Office",
+        "description": "WURI program participation disrupted by military coup and political instability.",
+        "features": ["WURI program suspended"],
+        "year_launched": "N/A",
+        "coverage": "5%",
+        "links": []
+    },
+    {
+        "country": "Chad",
+        "isoAlpha2": "TD",
+        "flagEmoji": "🇹🇩",
+        "status": "Planning",
+        "authority": "Ministry of Interior",
+        "description": "Digital ID initiatives mentioned in ID4Africa 2024 commitments with minimal concrete progress.",
+        "features": ["Digital ID framework development"],
+        "year_launched": "TBD",
+        "coverage": "5%",
+        "links": []
+    },
+    {
+        "country": "Togo",
+        "isoAlpha2": "TG",
+        "flagEmoji": "🇹🇬",
+        "status": "Partial",
+        "authority": "Civil Registry Office",
+        "description": "Part of WURI program for digital identity and social services with slow progress.",
+        "features": ["WURI program", "Social services integration"],
+        "year_launched": "TBD",
+        "coverage": "N/A",
+        "links": [
+            {
+                "title": "Digital identification in Africa - Diplo Resource Policy Analysis",
+                "url": "https://www.diplomacy.edu/resource/report-stronger-digital-voices-from-africa/digital-identification-africa/",
+                "type": "Policy Research"
+            }
+        ]
+    },
+    {
+        "country": "Tanzania",
+        "isoAlpha2": "TZ",
+        "flagEmoji": "🇹🇿",
+        "status": "Implemented",
+        "authority": "National Identification Authority (NIDA)",
+        "description": "NIDA manages the national ID. It is mandatory for SIM card registration, banking, and public services. Online enrolment services are active.",
+        "features": ["Mandatory for SIM cards", "Banking integration", "Public service access", "Online enrolment"],
+        "year_launched": "2013",
+        "coverage": "Growing, millions enrolled",
+        "links": [
+            {
+                "title": "Major research project examines digital identity in 10 African countries (Biometric Update, 2021)",
+                "url": "https://www.biometricupdate.com/202111/major-research-project-examines-digital-identity-in-10-african-countries",
+                "type": "News"
+            }
+        ]
+    },
+    {
+        "country": "Zambia",
+        "isoAlpha2": "ZM",
+        "flagEmoji": "🇿🇲",
+        "status": "Partial",
+        "authority": "Department of National Registration",
+        "description": "Digital ID initiatives as part of broader registration modernization with slow progress.",
+        "features": ["Registration modernization", "Digital components"],
+        "year_launched": "2021",
+        "coverage": "30%",
+        "links": [
+            {
+                "title": "World Bank ID4D Country Diagnostic: Zambia",
+                "url": "https://documents1.worldbank.org/curated/en/318571474317392658/pdf/Zambia-ID4D-DiagnosticWeb040418.pdf",
+                "type": "Development Partner"
+            }
+        ]
+    },
+    {
+        "country": "Zimbabwe",
+        "isoAlpha2": "ZW",
+        "flagEmoji": "🇿🇼",
+        "status": "Partial",
+        "authority": "Registrar General's Office",
+        "description": "Digital identity interoperability agreement signatory. Limited comprehensive digital ID beyond passports.",
+        "features": ["Biometric passports", "Interoperability framework"],
+        "year_launched": "2022",
+        "coverage": "25%",
+        "links": [
+            {
+                "title": "Major research project examines digital identity in 10 African countries (Biometric Update, 2021)",
+                "url": "https://www.biometricupdate.com/202111/major-research-project-examines-digital-identity-in-10-african-countries",
+                "type": "News"
+            }
+        ]
+    },
+    {
+        "country": "Malawi",
+        "isoAlpha2": "MW",
+        "flagEmoji": "🇲🇼",
+        "status": "Partial",
+        "authority": "National Registration Bureau",
+        "description": "Significant evolution in ID architecture 2015-2025. Integration with 30+ institutions but limited digital features.",
+        "features": ["Modernized architecture", "Multi-institutional integration"],
+        "year_launched": "2015",
+        "coverage": "60%",
+        "links": [
+            {
+                "title": "World Bank ID4D Programme Overview (general research hub, no country-specific diagnostic published)",
+                "url": "https://id4d.worldbank.org/guide/id4d-tools-and-research-topic",
+                "type": "Development Partner"
+            }
+        ]
+    },
+    {
+        "country": "Botswana",
+        "isoAlpha2": "BW",
+        "flagEmoji": "🇧🇼",
+        "status": "Planning",
+        "authority": "Civil Registration Department",
+        "description": "Traditional ID system with some digital enhancements planned but limited progress.",
+        "features": ["Identity cards", "Limited digitization planned"],
+        "year_launched": "TBD",
+        "coverage": "40%",
+        "links": []
+    },
+    {
+        "country": "Namibia",
+        "isoAlpha2": "NA",
+        "flagEmoji": "🇳🇦",
+        "status": "Planning",
+        "authority": "Ministry of Home Affairs, Immigration, Safety and Security (MHAISS)",
+        "description": "Namibia is introducing a biometric electronic ID (e-ID) card. The rollout, first planned earlier in 2026, was postponed until data protection and identity legislation could be finalised and was re-scheduled for September 2026. Existing ID cards stay valid until the ministry announces otherwise.",
+        "features": ["Biometric e-ID card", "Existing ID cards remain valid during transition"],
+        "year_launched": "Planned September 2026",
+        "coverage": "N/A",
+        "links": [
+            {
+                "title": "Namibia steps up digital ID campaign ahead of September rollout (Biometric Update)",
+                "url": "https://www.biometricupdate.com/202607/namibia-steps-up-digital-id-campaign-ahead-of-september-rollout",
+                "type": "News"
+            }
+        ]
+    },
+    {
+        "country": "Eswatini",
+        "isoAlpha2": "SZ",
+        "flagEmoji": "🇸🇿",
+        "status": "Planning",
+        "authority": "Ministry of Information, Communications and Technology (ICT)",
+        "description": "Eswatini is actively developing a national digital identity system, guided by its 'Government in Your Hand' (GIYH) strategy. A core component, the GIYH mobile app, was launched in May 2025, providing citizens with digital access to a growing number of government services using their existing national ID cards. The full system is planned to integrate biometric technology and broader digital public infrastructure, with support from partners like the World Bank and UNDP.",
+        "features": [],
+        "year_launched": "Partial launch in May 2025 (GIYH app), full system release TBD",
+        "coverage": "Growing (GIYH app has over 2,000 downloads as of June 2025)",
+        "links": []
+    },
+
+    {
+        "country": "Mauritius",
+        "isoAlpha2": "MU",
+        "flagEmoji": "🇲🇺",
+        "status": "Implemented",
+        "authority": "Prime Minister's Office, Ministry of Information Technology, Communication and Innovation (MITCI)",
+        "description": "Mauritius is upgrading its National Identity Card (MNIC) system to a comprehensive digital identity ecosystem in line with the 'Digital Mauritius 2030' strategy. A new version of the physical smart ID card (MNIC 3.0) was unveiled in February 2024. In September 2024, the government launched the 'Mobil ID' and the 'MWA' mobile app, which functions as a digital wallet for documents like identity cards and birth certificates. While the physical card is in use, the full integration of the digital wallet is ongoing, making the system a partial launch toward a comprehensive digital identity.",
+        "features": [
+            "MNIC 3.0 biometric physical smart card with enhanced security",
+            "Mobil ID digital identity card for online transactions",
+            "MWA mobile digital wallet app to store and manage digital documents"
+        ],
+        "year_launched": "Phased launch from February 2024; Mobile ID launched August 2024",
+        "coverage": "N/A",
+        "links": [
+            {
+                "title": "Thales Leads Innovative Digital Transformation of the Mauritius National Identity System",
+                "url": "https://www.thalesgroup.com/en/worldwide/digital-identity-and-security/press_release/thales-leads-innovative-digital",
+                "type": "Official"
+            }
+        ]
+    },
+    {
+        "country": "Seychelles",
+        "isoAlpha2": "SC",
+        "flagEmoji": "🇸🇨",
+        "status": "Partial",
+        "authority": "Department of Immigration",
+        "description": "Small-scale digital identity initiatives for population of ~100K with limited scope.",
+        "features": ["Small-scale implementation"],
+        "year_launched": "2020",
+        "coverage": "60%",
+        "links": []
+    },
+    {
+        "country": "Gabon",
+        "isoAlpha2": "GA",
+        "flagEmoji": "🇬🇦",
+        "status": "Planning",
+        "authority": "Ministry of Interior",
+        "description": "Steps towards digital ID card issuance taken in 2024. Recent political instability may affect progress.",
+        "features": ["Digital ID card development"],
+        "year_launched": "2024",
+        "coverage": "5%",
+        "links": []
+    },
+    {
+        "country": "Equatorial Guinea",
+        "isoAlpha2": "GQ",
+        "flagEmoji": "🇬🇶",
+        "status": "No Data",
+        "authority": "N/A",
+        "description": "No comprehensive digital identity system development in the oil-rich nation.",
+        "features": [],
+        "year_launched": "N/A",
+        "coverage": "Unknown",
+        "links": []
+    },
+    {
+        "country": "São Tomé and Príncipe",
+        "isoAlpha2": "ST",
+        "flagEmoji": "🇸🇹",
+        "status": "No Data",
+        "authority": "N/A",
+        "description": "No digital identity system for small island population despite some regional mentions.",
+        "features": [],
+        "year_launched": "N/A",
+        "coverage": "Unknown",
+        "links": []
+    },
+    {
+        "country": "Cameroon",
+        "isoAlpha2": "CM",
+        "flagEmoji": "🇨🇲",
+        "status": "Partial",
+        "authority": "Ministry of Territorial Administration",
+        "description": "Limited digital ID initiatives, primarily focused on biometric passports rather than comprehensive digital ID.",
+        "features": ["Biometric passports", "Limited ID modernization"],
+        "year_launched": "2018",
+        "coverage": "20%",
+        "links": []
+    },
+    {
+        "country": "Central African Republic",
+        "isoAlpha2": "CF",
+        "flagEmoji": "🇨🇫",
+        "status": "No Data",
+        "authority": "N/A",
+        "description": "Political instability and conflict severely limit digital identity development capacity.",
+        "features": [],
+        "year_launched": "N/A",
+        "coverage": "Unknown",
+        "links": []
+    },
+    {
+        "country": "Democratic Republic of Congo",
+        "isoAlpha2": "CD",
+        "flagEmoji": "🇨🇩",
+        "status": "No Data",
+        "authority": "N/A",
+        "description": "Limited digital identity infrastructure due to governance challenges, conflict, and vast territory.",
+        "features": [],
+        "year_launched": "N/A",
+        "coverage": "Unknown",
+        "links": []
+    },
+    {
+        "country": "Republic of Congo",
+        "isoAlpha2": "CG",
+        "flagEmoji": "🇨🇬",
+        "status": "No Data",
+        "authority": "N/A",
+        "description": "No comprehensive digital identity system in place despite oil revenues.",
+        "features": [],
+        "year_launched": "N/A",
+        "coverage": "Unknown",
+        "links": []
+    },
+    {
+        "country": "Angola",
+        "isoAlpha2": "AO",
+        "flagEmoji": "🇦🇴",
+        "status": "Partial",
+        "authority": "Ministry of Interior",
+        "description": "Some digital enhancements to traditional identity systems with slow progress.",
+        "features": ["Identity modernization", "Limited digital features"],
+        "year_launched": "2020",
+        "coverage": "15%",
+        "links": [
+            {
+                "title": "Digital identification in Africa - Diplo Resource Policy Analysis",
+                "url": "https://www.diplomacy.edu/resource/report-stronger-digital-voices-from-africa/digital-identification-africa/",
+                "type": "Policy Research"
+            }
+        ]
+    },
+    {
+        "country": "Guinea",
+        "isoAlpha2": "GN",
+        "flagEmoji": "🇬🇳",
+        "status": "Partial",
+        "authority": "Ministry of Security",
+        "description": "Signatory to digital identity interoperability agreement but limited practical implementation.",
+        "features": ["Interoperability framework"],
+        "year_launched": "2023",
+        "coverage": "10%",
+        "links": [
+            {
+                "title": "World Bank ID4D Country Diagnostic: Guinea",
+                "url": "https://documents1.worldbank.org/curated/en/630611472120072748/pdf/Guinea-ID4D-Diagnostics-WebV42018.pdf",
+                "type": "Development Partner"
+            }
+        ]
+    },
+    {
+        "country": "Guinea-Bissau",
+        "isoAlpha2": "GW",
+        "flagEmoji": "🇬🇼",
+        "status": "No Data",
+        "authority": "N/A",
+        "description": "No comprehensive digital identity system development in the small West African nation.",
+        "features": [],
+        "year_launched": "N/A",
+        "coverage": "Unknown",
+        "links": []
+    },
+    {
+        "country": "Sierra Leone",
+        "isoAlpha2": "SL",
+        "flagEmoji": "🇸🇱",
+        "status": "Implemented",
+        "authority": "National Civil Registration Authority (NCRA)",
+        "description": "Sierra Leone's NCRA issues a National Identification Number (NIN) and biometric ID cards; card production began in January 2023. The NIN is required for passports and permits and for land transactions. The NCRA reports 93% ID registration coverage (self-reported, 2025).",
+        "features": ["National Identification Number (NIN)", "Biometric ID cards", "NIN required for passports and land transactions"],
+        "year_launched": "2023 (biometric ID cards)",
+        "coverage": "93% registered (NCRA, self-reported, 2025)",
+        "links": [
+            {
+                "title": "World Bank ID4D Country Diagnostic: Sierra Leone",
+                "url": "https://documents1.worldbank.org/curated/en/844991489661178352/pdf/113550-REPL-Sierra-Leone-ID4D-Diagnostics-Web.pdf",
+                "type": "Development Partner"
+            },
+            {
+                "title": "Sierra Leone reaches 93 percent national ID coverage (Premier News SL)",
+                "url": "https://www.premiermedia-sl.com/sierra-leone-reaches-93-percent-national-id-coverage-80-percent-services-digitized/",
+                "type": "News"
+            }
+        ]
+    },
+    {
+        "country": "Liberia",
+        "isoAlpha2": "LR",
+        "flagEmoji": "🇱🇷",
+        "status": "Partial",
+        "authority": "National Identification Registry (NIR)",
+        "description": "Liberia's National Identification Registry, set up by law in 2011, launched a biometric national ID in October 2017. A new biometric ID system is being introduced, with a provider announced in August 2026.",
+        "features": ["Biometric national ID", "New system being introduced (2026)"],
+        "year_launched": "2017",
+        "coverage": "Unknown",
+        "links": [
+            {
+                "title": "Liberia picks Austrian firm for new biometric ID system (allAfrica, Aug 2026)",
+                "url": "https://allafrica.com/stories/202608180180.html",
+                "type": "News"
+            }
+        ]
+    },
+    {
+        "country": "Gambia",
+        "isoAlpha2": "GM",
+        "flagEmoji": "🇬🇲",
+        "status": "Partial",
+        "authority": "Ministry of Interior; Immigration Department",
+        "description": "The Gambia has issued biometric national ID cards through the Immigration Department since 2009. A new National Identification Management System was launched in mid-2026, with registration starting in the Greater Banjul area in August 2026.",
+        "features": ["Biometric ID cards", "New national identification system (2026)"],
+        "year_launched": "2009 (new system 2026)",
+        "coverage": "Unknown",
+        "links": [
+            {
+                "title": "The Gambia begins nationwide rollout of new national digital ID (Biometric Update)",
+                "url": "https://www.biometricupdate.com/202608/the-gambia-begins-nationwide-rollout-of-new-national-digital-id",
+                "type": "News"
+            }
+        ]
+    },
+    {
+        "country": "Cape Verde",
+        "isoAlpha2": "CV",
+        "flagEmoji": "🇨🇻",
+        "status": "Implemented",
+        "authority": "Civil Registry Office",
+        "description": "Cabo Verde issues a National Identification Card. A 2026 national presentation puts ID coverage of adults at about 95%, and electronic authentication and a digital mobile key are being implemented.",
+        "features": ["Identity modernization"],
+        "year_launched": "2021",
+        "coverage": "About 95% of adults (18+), 2026 national presentation",
+        "links": [
+            {
+                "title": "Cabo Verde: CRVS and ID coverage (ID4Africa 2026 presentation)",
+                "url": "https://id4africa.com/2026/files/T4-1-S2-1-Cape-Verde-FINAL.pdf",
+                "type": "Policy Research"
+            }
+        ]
+    },
+    {
+        "country": "Mauritania",
+        "isoAlpha2": "MR",
+        "flagEmoji": "🇲🇦",
+        "status": "Partial",
+        "authority": "National Agency for the Registry of Populations and Secure Titles (ANRPTS)",
+        "description": "Mauritania runs a biometric population register managed by ANRPTS, and a national ID card based on it. A 2012 decree made the card compulsory for citizens aged 16 and over, and applications are made in person at citizen welcome centres. Enrolment has been contested, and no current coverage figure was found.",
+        "features": ["Biometric population register", "Compulsory national ID card (16+)", "Citizen welcome centres"],
+        "year_launched": "2012",
+        "coverage": "Unknown",
+        "links": [
+            {
+                "title": "Landinfo: Mauritania, ID documents (2017, in Norwegian)",
+                "url": "https://landinfo.no/asset/3601/1/3601_1.pdf",
+                "type": "Policy Research"
+            }
+        ]
+    },
+    {
+        "country": "Djibouti",
+        "isoAlpha2": "DJ",
+        "flagEmoji": "🇩🇯",
+        "status": "No Data",
+        "authority": "N/A",
+        "description": "No comprehensive digital identity system development in the strategic port nation.",
+        "features": [],
+        "year_launched": "N/A",
+        "coverage": "Unknown",
+        "links": []
+    },
+    {
+        "country": "Eritrea",
+        "isoAlpha2": "ER",
+        "flagEmoji": "🇪🇷",
+        "status": "No Data",
+        "authority": "N/A",
+        "description": "No digital identity system development in the isolated nation.",
+        "features": [],
+        "year_launched": "N/A",
+        "coverage": "Unknown",
+        "links": []
+    },
+    {
+        "country": "Somalia",
+        "isoAlpha2": "SO",
+        "flagEmoji": "🇸🇴",
+        "status": "Partial",
+        "authority": "National Identification and Registration Authority (NIRA)",
+        "description": "Somalia's NIRA issues a biometric national ID under Law No. 009 of March 2023. Applicants' fingerprints and photograph are captured and biometric deduplication ensures each person is registered once. NIRA offers identity verification to partners and has opened offices abroad.",
+        "features": ["Biometric enrolment (fingerprints and photo)", "Biometric deduplication", "Identity verification service"],
+        "year_launched": "2023",
+        "coverage": "Unknown",
+        "links": [
+            {
+                "title": "World Bank ID4D Country Diagnostic: Somalia",
+                "url": "https://id4d.worldbank.org/sites/id4d.worldbank.org/files/2018-04/Somalia_ID4D_Diagnostic_Web040418.pdf",
+                "type": "Development Partner"
+            },
+            {
+                "title": "NIRA: National ID registration",
+                "url": "https://nira.gov.so/nationalid",
+                "type": "Official"
+            }
+        ]
+    },
+    {
+        "country": "Sudan",
+        "isoAlpha2": "SD",
+        "flagEmoji": "🇸🇩",
+        "status": "No Data",
+        "authority": "N/A",
+        "description": "Political instability and ongoing conflict limit digital identity development.",
+        "features": [],
+        "year_launched": "N/A",
+        "coverage": "Unknown",
+        "links": []
+    },
+    {
+        "country": "South Sudan",
+        "isoAlpha2": "SS",
+        "flagEmoji": "🇸🇸",
+        "status": "No Data",
+        "authority": "N/A",
+        "description": "Young nation with limited digital identity infrastructure due to ongoing instability.",
+        "features": [],
+        "year_launched": "N/A",
+        "coverage": "Unknown",
+        "links": []
+    },
+    {
+        "country": "Madagascar",
+        "isoAlpha2": "MG",
+        "flagEmoji": "🇲🇬",
+        "status": "Planning",
+        "authority": "N/A",
+        "description": "Madagascar is actively developing a digital identity system, supported by the World Bank's Digital Governance and Identification Management System (PRODIGY) Project. The project aims to strengthen the Identity Management (ID-M) system and improve service delivery in selected sectors. Efforts are being made to expedite the delivery of unique identifiers during household censuses to provide immediate access to state services. The system will eventually integrate biometric registration and facilitate the regularization of individuals without legal identity.",
+        "features": [],
+        "year_launched": "N/A",
+        "coverage": "Not yet launched",
+        "links": []
+    },
+    {
+        "country": "Comoros",
+        "isoAlpha2": "KM",
+        "flagEmoji": "🇰🇲",
+        "status": "Planning",
+        "authority": "N/A",
+        "description": "Comoros is working towards a comprehensive digital ID system as part of its efforts to digitize the economy. {Link: According to the African Development Bank Group https://www.afdb.org/en/news-and-events/press-releases/comoros-african-development-bank-grants-over-9-million-euros-digitizing-comorian-economy-74516}, the African Development Bank has granted over 9 million euros to the Comoros for the Project to Support the Digitization of the Comorian Economy. This project aims to improve governance, quality, affordability, and accessibility of public services. It includes plans for a data center, digital administration platforms, e-services development, and a digital public payment system. The country has a low Digital Identity Index score of 26.05/100, indicating room for development.",
+        "features": [
+            "Digital administration platform (planned)",
+            "E-services development (planned)",
+            "Digital public payment system (planned)"
+        ],
+        "year_launched": "Ongoing development (AfDB project approved Sep 2024)",
+        "coverage": "Not yet launched",
+        "links": []
+    },
+    {
+        "country": "Mozambique",
+        "isoAlpha2": "MZ",
+        "flagEmoji": "🇲🇿",
+        "status": "Partial",
+        "authority": "Ministry of Transport and Communications",
+        "description": "Mozambique is implementing its digital transformation strategy, supported by the World Bank's Digital Governance and Economy (EDGE) Project. As part of this, the government has launched a nationwide free ID registration campaign to increase civil identification coverage, which is a foundational step toward a digital ID. Significant efforts are underway to digitalize government services through a new Citizen Portal, an e-payment gateway, and digital signatures.",
+        "features": [
+            "Nationwide free ID registration campaign (started Nov 2023)",
+            "Citizen Portal for access to government services (planned/under development)",
+            "E-Gov payment gateway for online transactions (planned/under development)"
+        ],
+        "year_launched": "Free ID Campaign: 2023. Digital Services: Phased launch.",
+        "coverage": "30%",
+        "links": [
+            {
+                "title": "World Bank - Unlocking Opportunities for Millions in Mozambique with Free IDs",
+                "url": "https://www.worldbank.org/en/news/feature/2024/07/03/unlocking-opportunities-for-millions-in-mozambique-afe-with-free-ids",
+                "type": "Development Partner"
+            }
+        ]
+    },
+    {
+        "country": "Lesotho",
+        "isoAlpha2": "LS",
+        "flagEmoji": "🇱🇸",
+        "status": "Partial",
+        "authority": "Ministry of Local Government, Chieftainship, Home Affairs and Police",
+        "description": "Lesotho has a well-established foundational National Identification (NID) system launched in 2013, with near-universal coverage. This system, managed by the Department of National Identity and Civil Registry (NICR), uses biometric data (fingerprints) to confirm identity and is already integrated with various government and private sector services for authentication. The country is now actively working on upgrading this system to a full digital ID, with a focus on verifiable credentials and digital certificates.",
+        "features": [
+            "Biometric data collection (ten fingerprints)",
+            "High coverage via enrollment centers and mobile units",
+            "Verification for government payroll and pension systems"
+        ],
+        "year_launched": "2013 (NID System), Ongoing upgrades for full digital ID",
+        "coverage": "70%",
+        "links": [
+            {
+                "title": "Lesotho Digital ID System Overview",
+                "url": "https://50in5.net/wp-content/uploads/2024/12/Lesotho.pdf",
+                "type": "Government"
+            },
+            {
+                "title": "Biometric Data Collection in Lesotho",
+                "url": "https://www.homeaffairslesotho.com/Biometric-data-collection.html",
+                "type": "Government"
+            }
+        ]
+    },
+    {
+        "country": "Burundi",
+        "isoAlpha2": "BI",
+        "flagEmoji": "🇧🇮",
+        "status": "Planning",
+        "authority": "Ministry of Information, Communication and the Media (tentative)",
+        "description": "Burundi is in the early stages of developing a digital identity system as a core component of its broader Digital Foundations Project. This initiative, supported by the World Bank, aims to increase broadband access and improve the government's capacity to deliver public services digitally. As of mid-2025, the country is focusing on foundational building blocks, with the full digital ID system still in the planning phase.",
+        "features": ["Foundational digital identification and authentication (planned)", "Improved digital skills for civil servants (project aim)", "Interoperability and data sharing frameworks (planned)"],
+        "year_launched": "N/A",
+        "coverage": "Not yet launched",
+        "links": [
+            {
+                "title": "Concept Project Information Document - Burundi Digital Foundations Project",
+                "url": "https://documents1.worldbank.org/curated/en/938661625737536409/pdf/Concept-Project-Information-Document-PID-Burundi-Digital-Foundations-Project-P176396.pdf",
+                "type": "Development Partner"
+            },
+            {
+                "title": "Burundi Digital Foundations Project",
+                "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/207441655916156350",
+                "type": "Development Partner"
+            }
+        ]
+    },
+    {
+        "country": "Sahrawi Arab Democratic Republic",
+        "status": "No Data",
+        "isoAlpha2": "EH",
+        "flagEmoji": "🇪🇭",
+        "authority": "N/A",
+        "description": "No information on a digital identity system has been recorded.",
+        "features": [],
+        "year_launched": "N/A",
+        "coverage": "Unknown",
+        "links": []
+    }
+]

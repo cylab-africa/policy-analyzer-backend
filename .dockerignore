@@ -1,0 +1,9 @@
+**__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+.env 
+*.db 
+*.sqlite3
+# Local uploads are data, not part of the image
+uploads/

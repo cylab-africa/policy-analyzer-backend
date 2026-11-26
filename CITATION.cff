@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software in your work, please cite it using this information."
+title: "Policy Analyzer: backend"
+type: software
+authors:
+  - name: "Upanzi Network"
+    website: "https://www.africa.engineering.cmu.edu/research/upanzi/index.html"
+repository-code: "https://github.com/cylab-africa/policy-analyzer-backend"
+license: MIT
+abstract: >-
+  Retrieval-based analysis of data protection and digital identity policy
+  across Africa. The backend of the Policy Analyzer extracts information from
+  policy documents, answers questions from them, and serves country reference
+  data.
+keywords:
+  - data protection
+  - digital identity
+  - policy analysis
+  - Africa
+  - retrieval-augmented generation

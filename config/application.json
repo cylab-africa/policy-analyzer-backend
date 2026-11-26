@@ -1,0 +1,97 @@
+{
+  "version": "1.0.0",
+  "description": "Application configuration for dynamic RAG system",
+  "tabs": {
+    "data-protection": {
+      "display_name": "Data Protection",
+      "description": "Data protection laws, regulations, and compliance frameworks across African countries",
+      "metadata_filters": ["country", "isoAlpha2"],
+      "vector_store_suffix": "data_protection",
+      "enabled": true,
+      "priority": 1
+    },
+    "digital-id": {
+      "display_name": "Digital Identity",
+      "description": "Digital identity systems, frameworks, and regulations",
+      "metadata_filters": ["country", "isoAlpha2"],
+      "vector_store_suffix": "digital_id",
+      "enabled": true,
+      "priority": 2
+    },
+    "general": {
+      "display_name": "General",
+      "description": "General legal and regulatory information",
+      "metadata_filters": ["country", "isoAlpha2"],
+      "vector_store_suffix": "general",
+      "enabled": true,
+      "priority": 999
+    }
+  },
+  "metadata": {
+    "important_keys": ["country", "isoAlpha2", "tab", "visibility", "client_id"],
+    "auto_detect": true,
+    "detection_config": {
+      "country": {
+        "method": "llm_extract",
+        "enabled": true,
+        "use_llm": true,
+        "source": "app/data/countries_law_data.json",
+        "confidence_threshold": 0.85,
+        "description": "Detect African countries using LLM for precise extraction"
+      },
+      "isoAlpha2": {
+        "method": "derived",
+        "enabled": true,
+        "source_key": "country",
+        "description": "ISO Alpha-2 country code derived from country detection"
+      }
+    },
+    "filter_strategy": {
+      "mode": "automatic",
+      "allow_empty_filters": true,
+      "combine_with_or": false,
+      "description": "Automatically extract and apply metadata filters from queries",
+      "query_indicators": {
+        "broad": [
+          "africa", "african", "continent", "region", "regional",
+          "compare", "comparison", "across", "different", "various",
+          "all countries", "multiple countries", "several countries",
+          "overview", "landscape", "general", "common", "typical",
+          "all", "every", "each", "most"
+        ],
+        "specific": [
+          "specific", "particular", "in", "at", "for",
+          "what is", "how does", "describe", "explain",
+          "tell me about", "information about"
+        ]
+      }
+    }
+  },
+  "retrieval": {
+    "default_k": 3,
+    "max_k": 10,
+    "max_total_docs": 12,
+    "chunk_size": 1500,
+    "chunk_overlap": 100,
+    "search_type": "similarity",
+    "description": "Document retrieval parameters",
+    "reranking": {
+      "enabled": false,
+      "model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+      "top_n": 5
+    }
+  },
+  "conversation": {
+    "max_history_length": 50,
+    "cleanup_threshold": 100,
+    "include_metadata_in_context": true,
+    "description": "Conversation history management settings"
+  },
+  "caching": {
+    "enabled": true,
+    "ttl_seconds": 3600,
+    "cache_prompts": true,
+    "cache_embeddings": false,
+    "description": "Caching configuration for improved performance"
+  }
+}

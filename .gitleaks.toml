@@ -1,0 +1,9 @@
+# Gitleaks settings: the default rules, plus one exception.
+title = "Policy Analyzer backend"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "The placeholder used for the API key in the README's curl examples"
+regexes = ['''^YOUR_API_KEY$''']

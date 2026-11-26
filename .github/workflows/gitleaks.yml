@@ -1,0 +1,45 @@
+name: Secret scan
+
+# Fails the build when a commit adds a password, API key or private key.
+# Only the commits being added are scanned: the old, already-revoked secrets in earlier history
+# would otherwise fail every run.
+
+on:
+  push:
+    branches: [main, uat]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  gitleaks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Gitleaks (pinned, checksum verified)
+        run: |
+          V=8.28.0
+          curl -sSfL -o gitleaks.tar.gz "https://github.com/gitleaks/gitleaks/releases/download/v${V}/gitleaks_${V}_linux_x64.tar.gz"
+          echo "a65b5253807a68ac0cafa4414031fd740aeb55f54fb7e55f386acb52e6a840eb  gitleaks.tar.gz" | sha256sum -c -
+          tar -xzf gitleaks.tar.gz gitleaks
+
+      - name: Scan the new commits
+        env:
+          EVENT: ${{ github.event_name }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          BEFORE_SHA: ${{ github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+        run: |
+          if [ "$EVENT" = "pull_request" ]; then
+            RANGE="${BASE_SHA}..HEAD"
+          elif [ -n "$BEFORE_SHA" ] && ! echo "$BEFORE_SHA" | grep -qE '^0+$' && git cat-file -e "$BEFORE_SHA" 2>/dev/null; then
+            RANGE="${BEFORE_SHA}..${HEAD_SHA}"
+          else
+            RANGE="-1 ${HEAD_SHA}"
+          fi
+          echo "Scanning: $RANGE"
+          ./gitleaks git --redact --verbose --no-banner --log-opts="$RANGE" .

@@ -1,0 +1,46 @@
+[project]
+name = "pdp-africa-analyzer"
+version = "0.1.0"
+description = "Retrieval-based analysis of data protection and digital identity policy across Africa"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.13"
+# The lower bounds on the LangChain packages are their security fixes. langchain-qdrant stays
+# below 1.2, which would force an older qdrant-client.
+dependencies = [
+    "aiosqlite>=0.21.0",
+    "boto3>=1.40.54",
+    "fastapi[standard]>=0.119.0",
+    "fastembed>=0.7.3",
+    "langchain>=1.3.9,<2",
+    "langchain-core>=1.2.22,<2",
+    "langchain-community>=0.4,<0.5",
+    "langchain-mongodb>=0.7.1,<0.8",
+    "langchain-openai>=1.1.14,<2",
+    "langchain-pymupdf4llm>=0.4.1,<1.0",
+    "langchain-qdrant>=1.1.0,<1.2",
+    "langchain-text-splitters>=1.1.2,<2",
+    "markdown>=3.10",
+    "openpyxl>=3.1.2",
+    "pandas>=2.2.0",
+    "pycountry>=24.6.1",
+    "pydantic>=2.12.2",
+    "pydantic-settings>=2.11.0",
+    "pymongo>=4.15.3",
+    "qdrant-client>=1.19",
+    "redis>=7.0.1",
+    "reportlab>=4.0.0",
+    "tavily>=1.1.0",
+    "uvicorn>=0.37.0",
+    "docx2txt>=0.9",
+]
+
+[dependency-groups]
+dev = [
+    "pypdf>=7.1.0",
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

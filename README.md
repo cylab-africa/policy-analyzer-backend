@@ -9,21 +9,6 @@ Built with FastAPI, LangChain, Qdrant, MongoDB and Redis.
 | [policy-analyzer-backend](https://github.com/cylab-africa/policy-analyzer-backend) (this repo) | Backend API |
 | [policy-analyzer-frontend](https://github.com/cylab-africa/policy-analyzer-frontend) | Next.js web app |
 
-## Contents
-
-- [Architecture](#architecture)
-- [Setup](#setup)
-- [Adding documents](#adding-documents)
-- [Updating the reference data](#updating-the-reference-data)
-- [Connecting the frontend](#connecting-the-frontend)
-- [Configuration](#configuration)
-- [Deployment](#deployment)
-- [API overview](#api-overview)
-- [Project structure](#project-structure)
-- [Troubleshooting](#troubleshooting)
-- [License](#license)
-
----
 
 ## Architecture
 

@@ -4,7 +4,7 @@ from pymongo import MongoClient
 from langchain_mongodb import MongoDBAtlasVectorSearch
 from app.core.config import settings
 from qdrant_client import QdrantClient
-from qdrant_client.models import Distance, VectorParams, SparseVectorParams,SparseIndexParams
+from qdrant_client.models import Distance, Modifier, VectorParams, SparseVectorParams, SparseIndexParams
 from langchain_qdrant import QdrantVectorStore as QDStore, RetrievalMode, FastEmbedSparse
 from langchain_core.documents import Document
 from langchain_core.vectorstores import VectorStore as LangchainVectorStore
@@ -285,12 +285,16 @@ class QdrantVectorStore(VectorStoreV2):
                 sparse_vectors_config={self._collection_name+"_sparse": SparseVectorParams(
                         index=SparseIndexParams(
                             on_disk=False,
-                        )
+                        ),
+                        # BM25 needs inverse document frequency (IDF), so that rare words count for more
+                        # than common ones. Qdrant computes it when searching.
+                        modifier=Modifier.IDF,
                     )}
                 )
             return
 
         print(f"Qdrant collection '{self._collection_name}' already exists.")
+        self._ensure_sparse_idf()
 
         # # Debug: Check actual payload structure
         # try:
@@ -327,6 +331,28 @@ class QdrantVectorStore(VectorStoreV2):
                         print(f"Note: Could not create index for {field}: {e}")
         except Exception as e:
             print(f"Warning: Could not create payload indexes: {e}")
+    def _ensure_sparse_idf(self) -> None:
+        """
+        Turn on IDF for the keyword (BM25) vectors of a collection created without it. Without IDF,
+        every word of a question counts the same, so a chunk that repeats a common word can outrank
+        the only chunk that names a rare one, such as a country. IDF is applied when searching, so
+        the chunks already stored do not need to be indexed again.
+        """
+        sparse_name = self._collection_name + "_sparse"
+        try:
+            sparse_vectors = self._client.get_collection(self._collection_name).config.params.sparse_vectors or {}
+            params = sparse_vectors.get(sparse_name)
+            if params is None or params.modifier == Modifier.IDF:
+                return
+            self._client.update_collection(
+                collection_name=self._collection_name,
+                sparse_vectors_config={sparse_name: SparseVectorParams(modifier=Modifier.IDF)},
+            )
+            print(f"Turned on IDF for the keyword vectors of '{self._collection_name}'.")
+        except Exception as e:
+            # Searches still work without IDF, so this must not stop the backend from starting
+            print(f"Warning: could not turn on IDF for the keyword vectors of '{self._collection_name}': {e}")
+
     def _init_vector_store(self):
         # note that the name QDStore is used to avoid name conflict with langchain VectorStore
         self._vector_store = QDStore(
